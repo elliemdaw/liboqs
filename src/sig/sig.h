@@ -45,9 +45,11 @@
 #define OQS_SIG_alg_qTESLA_III_size "qTESLA_III_size"
 /** Algorithm identifier for qTESLA_III_speed */
 #define OQS_SIG_alg_qTESLA_III_speed "qTESLA_III_speed"
+/** Algorithm identifier for Dilithium_L3 **/
+#define OQS_SIG_alg_dilithium_L3 "dilithium_L3"
 // EDIT-WHEN-ADDING-SIG
 /** Number of algorithm identifiers above (including default). */
-#define OQS_SIG_algs_length 10
+#define OQS_SIG_algs_length 11
 /** The default signature. Different on Windows because qTESLA is not yet supported. */
 #if defined(_WIN32)
 #define OQS_SIG_DEFAULT OQS_SIG_alg_picnic_L1_FS

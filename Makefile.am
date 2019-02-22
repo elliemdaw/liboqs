@@ -26,6 +26,9 @@ endif
 if ENABLE_SIG_QTESLA
 liboqs_la_LIBADD += src/sig/qtesla/libqtesla.la
 endif
+if ENABLE_SIG_DILITHIUM
+liboqs_la_LIBADD += src/sig/dilithium/libdilithium.la
+endif
 
 if ENABLE_KEM_BIKE
 liboqs_la_LIBADD += src/kem/bike/libkembike.la
@@ -95,6 +98,7 @@ links: oqsconfigh
 	cp -f src/sig/sig.h include/oqs
 	cp -f src/sig/picnic/sig_picnic.h include/oqs
 	cp -f src/sig/qtesla/sig_qtesla.h include/oqs
+	cp -f src/sig/dilithium/sig_dilithium.h include/oqs
 
 clean-local:
 	rm -rf include
